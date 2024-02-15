@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="mainContent">
+      <section class="calcCont">
+        <div class="upperCont">
+          <div class="inputFields">
+            <input
+              type="text"
+              id="input1"
+              placeholder="Input 1"
+              onchange="inputDataHandler1()"
+            />
+          </div>
+          <div class="inputFields">
+            <input
+              type="text"
+              id="input2"
+              placeholder="Input 2"
+              onchange="inputDataHandler2()"
+            />
+          </div>
+          <div class="resultCont" id="resultCont"></div>
+        </div>
+        <div class="bottomCont">
+          <div class="operators"><h4 id="addition">+</h4></div>
+          <div class="operators"><h4 id="substraction">-</h4></div>
+          <div class="operators"><h4 id="multipication">×</h4></div>
+          <div class="operators">
+            <h4 id="division">÷</h4>
+          </div>
+          <div class="clearButton"><button id="clear">Clear</button></div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
